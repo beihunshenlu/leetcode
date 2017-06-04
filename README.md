@@ -5,5 +5,5 @@
 I don't want to give unnecessary details cause it has a lot on the website. So I write these sentences to mark this first time.<br><br>
                                                                                                                     2017.6.3
 
-　　The second problem gives me a tip, if you can list the condition in a parallel way, you won't write them with a nesting way. I don't know what's wrong if I write the conditions with nesting, but only if I list them in one "if()", the program adopted. Why???
+　　The second problem gives me a tip, if you can list the condition in a parallel way, you won't write them with a nesting way. I don't know what's wrong if I write the conditions with nesting, but only if I list them in one "if()", the program adopted. Why???<br><br>
 　　2017.6.4
