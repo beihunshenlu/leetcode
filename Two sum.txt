@@ -47,3 +47,94 @@ public:
         return false;
     }
 };
+
+3.
+Given a non-negative integer represented as a non-empty array of digits, plus one to the integer.
+You may assume the integer do not contain any leading zero, except the number 0 itself.
+The digits are stored such that the most significant digit is at the head of the list.
+
+class Solution {
+public:
+    vector<int> plusOne(vector<int>& digits) {
+        vector<int> fin;
+        int i;
+        unsigned int k=digits.size();
+        for(i=k-1;i!=-1;--i)
+        {
+            if(digits[i]+1<10)
+            {
+                digits[i]+=1;
+                return digits;
+            }
+            else
+                digits[i]=0;
+        }
+        if(digits[0]==0)
+        {
+            fin.push_back(1);
+            for(int j=0;j<digits.size();++j)
+                fin.push_back(digits[j]);
+        }
+        else
+           for(int j=0;j<digits.size();++j)
+                fin.push_back(digits[j]);
+        return fin;
+    }
+};
+
+4.
+In MATLAB, there is a very useful function called 'reshape', which can reshape a matrix into a new one with different size but keep its original data.
+You're given a matrix represented by a two-dimensional array, and two positive integers r and c representing the row number and column number of the wanted reshaped matrix, respectively.
+The reshaped matrix need to be filled with all the elements of the original matrix in the same row-traversing order as they were.
+If the 'reshape' operation with given parameters is possible and legal, output the new reshaped matrix; Otherwise, output the original matrix.
+
+class Solution {
+public:
+    vector<vector<int>> matrixReshape(vector<vector<int>>& nums, int r, int c) {
+        if(nums.size()*nums[0].size()!=r*c)
+            return nums;
+        vector<int> num;
+        for(int i=0; i<nums.size(); ++i)
+        {
+            for(int j=0; j<nums[0].size(); ++j)
+            {
+                num.push_back(nums[i][j]);
+            }
+        }
+        nums.clear();
+        vector<int> n;
+        int k=0;
+        for(int i=0; i<r; ++i)
+        {
+            n.clear();
+            for(int j=0; j<c; ++j)
+            {
+                n.push_back(num[k]);
+                ++k;
+            }
+
+            nums.push_back(n);
+        }
+        cout<<endl;
+        for(int i=0; i<r; ++i)
+        {
+            for(int j=0; j<c; ++j)
+            {
+                cout<<nums[i][j]<<" ";
+            }
+            cout<<endl;
+        }
+        return nums;
+    }
+};
+
+class Solution {
+public:
+    vector<vector<int>> matrixReshape(vector<vector<int>>& nums, int r, int c) {
+        int m = nums.size(), n = nums[0].size(), o = m * n;
+        if (r * c != o) return nums;
+        vector<vector<int>> res(r, vector<int>(c, 0));
+        for (int i = 0; i < o; i++) res[i / c][i % c] = nums[i / n][i % n];
+        return res;
+    }
+};
