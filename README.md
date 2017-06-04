@@ -4,3 +4,6 @@
 　　The thread of this problem is hash. It uses index skillfully. But at the last period, I meet this problem. When the nums is [3,3] and the target is 6, my function return [1,1] at that time, so it useful to add a condition of "m[t]!=i" in "if()".<br>
 I don't want to give unnecessary details cause it has a lot on the website. So I write these sentences to mark this first time.<br><br>
                                                                                                                     2017.6.3
+
+　　The second problem gives me a tip, if you can list the condition in a parallel way, you won't write them with a nesting way. I don't know what's wrong if I write the conditions with nesting, but only if I list them in one "if()", the program adopted. Why???
+　　2017.6.4
