@@ -14,4 +14,7 @@ I list two solutions, cause my solution was too bad. The simple one may think ab
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　2017.6.4<br>
 5.<br>
 This one I gave three solutions. The first is my original version, it still sucks. The second one came from the third one, I imitated the third one to change imporve my original version. The "i++" from the third one in the "if()" is so good, it means if the last one has been planted, you can not consider the next one, so you can skip it.<br>
+
+6.<br>
+This one used O(n) time and O(1) space. If Hash, it will be O(n) space and O(1) time.
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　2017.6.5<br>
