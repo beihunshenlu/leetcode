@@ -12,3 +12,6 @@ What I did was complying with the question, step by step and slove it.<br>
 4.<br>
 I list two solutions, cause my solution was too bad. The simple one may think about a little time.<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　2017.6.4<br>
+5.<br>
+This one I gave three solutions. The first is my original version, it still sucks. The second one came from the third one, I imitated the third one to change imporve my original version. The "i++" from the third one in the "if()" is so good, it means if the last one has been planted, you can not consider the next one, so you can skip it.<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　2017.6.5<br>
