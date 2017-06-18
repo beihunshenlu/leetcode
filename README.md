@@ -18,3 +18,5 @@ This one I gave three solutions. The first is my original version, it still suck
 6.<br>
 This one used O(n) time and O(1) space. If Hash, it will be O(n) space and O(1) time.
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　2017.6.5<br>
+7.<br>
+This one took me a long time. What my fault is I put "record=0" to else statement. That is a logical error, if there has a longer consecutive one than you choose now, you can't set the "record" to zero. So the next consecutive one will add one at the basic of the last one you don't set to zero.<br>
